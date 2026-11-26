@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Beranda | PAUD Lamongan</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/beranda.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container-fluid">
+
+    <!-- LOGO + TEKS -->
+    <a class="navbar-brand d-flex align-items-center" href="beranda.html">
+      <img src="img/logo-dispendik.png" alt="Logo" class="logo">
+      <span class="brand-text">
+        Bidang PAUD dan Pendidikan Non Formal/Kesetaraan<br>
+        <small>Dinas Pendidikan Kab. Lamongan</small>
+      </span>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+
+        <li class="nav-item">
+          <a class="nav-link active" href="beranda.html">Beranda</a>
+        </li>
+
+        <!-- PROFIL -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+            Profil
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="profil.html">Profil Bidang</a></li>
+            <li><a class="dropdown-item" href="struktur.html">Struktur Organisasi</a></li>
+            <li><a class="dropdown-item" href="tugas.html">Tugas Pokok</a></li>
+          </ul>
+        </li>
+
+        <!-- SEKSI -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+            Seksi
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="seksi-pnf.html">Seksi PNF</a></li>
+            <li><a class="dropdown-item" href="seksi-sarpras.html">Seksi Sarpras</a></li>
+            <li><a class="dropdown-item" href="seksi-paud.html">Seksi PAUD</a></li>
+          </ul>
+        </li>
+
+        <!-- DATA -->
+        <li class="nav-item">
+          <a class="nav-link" href="data.html">Data</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="materi.html">Materi PAUD</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="berita.html">Berita</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="saran.html">Saran</a>
+        </li>
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+<!-- SLIDER -->
+<div id="carouselBeranda"
+     class="carousel slide"
+     data-bs-ride="carousel"
+     data-bs-interval="2000">
+
+  <div class="carousel-inner">
+
+    <!-- SLIDE 1 -->
+    <div class="carousel-item active">
+      <img src="img/img-slider/slide1.jpeg"
+           class="d-block w-100 slider-img" alt="Slide 1">
+
+      <div class="carousel-caption custom-caption d-none d-md-block">
+        <h2 class="slider-title">Selamat Datang</h2>
+        <div class="slider-line"></div>
+        <p class="slider-subtitle">
+          Website Resmi Bidang PAUD Kabupaten Lamongan
+        </p>
+      </div>
+    </div>
+
+    <!-- SLIDE 2 -->
+    <div class="carousel-item">
+      <img src="img/img-slider/slide2.jpeg"
+           class="d-block w-100 slider-img" alt="Slide 2">
+
+      <div class="carousel-caption custom-caption d-none d-md-block">
+        <h2 class="slider-title">Layanan PAUD</h2>
+        <div class="slider-line"></div>
+        <p class="slider-subtitle">
+          Mendukung Pendidikan Anak Usia Dini Berkualitas
+        </p>
+      </div>
+    </div>
+
+    <!-- SLIDE 3 -->
+    <div class="carousel-item">
+      <img src="img/img-slider/slide3.jpg"
+           class="d-block w-100 slider-img" alt="Slide 3">
+
+      <div class="carousel-caption custom-caption d-none d-md-block">
+        <h2 class="slider-title">Informasi & Data</h2>
+        <div class="slider-line"></div>
+        <p class="slider-subtitle">
+          Transparansi Data Pendidikan PAUD
+        </p>
+      </div>
+    </div>
+
+    <!-- SLIDE 4 -->
+    <div class="carousel-item">
+      <img src="img/img-slider/slide4.jpg"
+           class="d-block w-100 slider-img" alt="Slide 4">
+
+      <div class="carousel-caption custom-caption d-none d-md-block">
+        <h2 class="slider-title">Bersama Membangun</h2>
+        <div class="slider-line"></div>
+        <p class="slider-subtitle">
+          Generasi Emas Kabupaten Lamongan
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+  <button class="carousel-control-prev" type="button"
+          data-bs-target="#carouselBeranda" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+
+  <button class="carousel-control-next" type="button"
+          data-bs-target="#carouselBeranda" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+
+
+
+<!-- SAMBUTAN BUNDA PAUD -->
+<section class="bunda-paud py-5">
+  <div class="container">
+    <div class="row align-items-start">
+
+      <!-- KOLOM FOTO & IDENTITAS -->
+      <div class="col-md-4 text-center mb-4">
+        <img src="img/bunda-paud.png"
+             alt="Bunda PAUD Kabupaten Lamongan"
+             class="img-fluid rounded shadow mb-3 bunda-img">
+
+        <h6 class="fw-bold mb-0">
+          Hj. Anis Kartikawati Yuhronur Efendi, S.Kep., Ners.
+        </h6>
+        <small class="text-muted">Bunda PAUD Kabupaten Lamongan</small>
+      </div>
+
+      <!-- KOLOM SAMBUTAN -->
+      <div class="col-md-8">
+        <h5 class="fw-bold mb-3">
+          Sambutan Bunda Paud
+        </h5>
+
+        <p>
+          Pendidikan Anak Usia Dini (PAUD) merupakan fondasi penting dalam membentuk
+          generasi yang berkualitas dan berkarakter. Oleh karena itu, penyelenggaraan
+          PAUD di Kabupaten Lamongan diarahkan agar dilakukan secara holistik dan
+          integratif, mencakup layanan pendidikan, kesehatan dan gizi, pengasuhan,
+          perlindungan, serta kesejahteraan anak.Mari kita ciptakan lingkungan belajar yang menyenangkan, aman, dan penuh cinta bagi mereka.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- KONTEN UTAMA -->
+<section class="hero">
+  <div class="container text-center">
+    <h1>Website PAUD</h1>
+    <p>
+      Sistem Informasi Bidang Pendidikan Anak Usia Dini  
+      Dinas Pendidikan Kabupaten Lamongan
+    </p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="row align-items-center">
+
+      <!-- KIRI: INFORMASI DINAS -->
+      <div class="col-md-8 footer-info">
+        <h5>DINAS PENDIDIKAN KABUPATEN LAMONGAN</h5>
+        <p>
+          Jl. KH. Ahmad Dahlan No. 75, Kecamatan Lamongan,<br>
+          Kabupaten Lamongan, Provinsi Jawa Timur, Kode Pos 62214
+        </p>
+
+        <!-- KONTAK -->
+        <div class="footer-contact">
+          <a href="mailto:disdik@lamongankab.go.id">
+            <i class="bi bi-envelope"></i> disdik@lamongankab.go.id
+          </a>
+          <span>|</span>
+          <a href="tel:0322321021">
+            <i class="bi bi-telephone"></i> (0322) 321021
+          </a>
+          <span>|</span>
+          <a href="https://wa.me/6281246676547" target="_blank">
+            <i class="bi bi-whatsapp"></i> +62 812-4667-6547
+          </a>
+        </div>
+
+        <!-- SOSIAL MEDIA -->
+        <div class="footer-social">
+          <a href="mailto:disdik@lamongankab.go.id" title="Email">
+            <i class="bi bi-envelope-fill"></i>
+          </a>
+          <a href="https://instagram.com/disdiklamongan" target="_blank" title="Instagram">
+            <i class="bi bi-instagram"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- KANAN: LOGO -->
+      <div class="col-md-4 text-md-end text-center mt-4 mt-md-0">
+        <img src="img/lamongan-megilan-putih.png" alt="Logo Disdik" class="footer-logo">
+      </div>
+
+    </div>
+
+    <hr class="footer-line">
+
+    <p class="text-center footer-copy">
+      amanda © 2026 Dinas Pendidikan Kabupaten Lamongan
+    </p>
+  </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

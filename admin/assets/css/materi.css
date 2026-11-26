@@ -1,0 +1,286 @@
+:root {
+    --primary: #3b82f6;
+    --primary-dark: #1d4ed8;
+    --primary-light: #dbeafe;
+    --secondary: #64748b;
+    --success: #10b981;
+    --warning: #f59e0b;
+    --danger: #ef4444;
+    --dark: #1e293b;
+    --light: #f8fafc;
+    --border: #e2e8f0;
+    --youtube: #ff0000;
+}
+
+/* GLOBAL */
+* {
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+    min-height: 100vh;
+}
+
+/* ================= SIDEBAR ================= */
+.sidebar {
+    width: 280px;
+    height: 100vh;
+    background: linear-gradient(180deg, #3b82f6 0%, #1d4ed8 50%, #1e40af 100%);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 4px 0 25px rgba(59, 130, 246, 0.25);
+}
+
+.sidebar-header {
+    padding: 2rem 1.5rem;
+    border-bottom: 1px solid rgba(255,255,255,0.15);
+}
+
+.logo {
+    height: 44px;
+}
+
+.brand-text {
+    color: white;
+    font-weight: 700;
+    font-size: 1.05rem;
+    margin-left: 1rem;
+    line-height: 1.2;
+}
+
+.brand-text small {
+    font-weight: 400;
+    opacity: 0.85;
+    font-size: 0.8rem;
+}
+
+/* MENU */
+.sidebar-menu {
+    padding: 1.5rem 0;
+    flex: 1;
+}
+
+.nav-link {
+    color: rgba(255,255,255,0.85);
+    padding: 0.85rem 1.5rem;
+    border-radius: 12px;
+    margin: 6px 1rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    transition: all 0.2s ease;
+}
+
+.nav-link i {
+    width: 22px;
+    margin-right: 12px;
+    font-size: 1.1rem;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    background: rgba(255,255,255,0.18);
+    color: #fff;
+    transform: translateX(5px);
+}
+
+/* FOOTER SIDEBAR */
+.sidebar-footer {
+    padding: 1rem;
+    border-top: 1px solid rgba(255,255,255,0.15);
+}
+
+/* ================= MAIN ================= */
+.main-content {
+    margin-left: 280px;
+    padding: 2rem;
+    min-height: 100vh;
+}
+
+/* ================= TOPBAR ================= */
+.topbar {
+    background: rgba(255,255,255,0.95);
+    backdrop-filter: blur(15px);
+    border-bottom: 1px solid var(--border);
+    padding: 1rem 1.5rem;
+    border-radius: 14px;
+}
+
+.topbar-title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.page-subtitle {
+    font-size: 0.9rem;
+    color: var(--secondary);
+}
+
+/* AVATAR */
+.user-avatar {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 600;
+}
+
+/* ================= CARD ================= */
+.content-card {
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 12px 35px rgba(0,0,0,0.08);
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.card-header-custom {
+    background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+    color: white;
+    padding: 1.5rem;
+}
+
+.card-body-custom {
+    padding: 1.8rem;
+}
+
+/* ================= FORM ================= */
+.form-control {
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 12px 14px;
+}
+
+.form-control:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 0.2rem rgba(59,130,246,0.15);
+}
+
+/* ================= TABLE ================= */
+.table-custom {
+    margin: 0;
+}
+
+.table-custom thead th {
+    background: #f8fafc;
+    font-weight: 600;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    padding: 1rem;
+}
+
+.table-custom tbody td {
+    padding: 1rem;
+    vertical-align: middle;
+}
+
+.table-custom tbody tr:hover {
+    background: rgba(59,130,246,0.05);
+}
+
+/* ================= BUTTON ================= */
+.btn-modern {
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 992px) {
+
+    .sidebar {
+        transform: translateX(-100%);
+        position: fixed;
+    }
+
+    .main-content {
+        margin-left: 0;
+        padding: 1rem;
+    }
+
+    .sidebar.mobile-open {
+        transform: translateX(0);
+    }
+
+    .topbar-title {
+        font-size: 1.3rem;
+    }
+}
+/* =========================
+   SIDEBAR SCROLL FIX
+========================= */
+.sidebar {
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+/* biar sidebar tetap enak di scroll */
+.sidebar-menu {
+    max-height: calc(100vh - 120px);
+    overflow-y: auto;
+    padding-bottom: 2rem;
+}
+
+/* scrollbar styling (opsional tapi bikin rapi) */
+.sidebar::-webkit-scrollbar,
+.sidebar-menu::-webkit-scrollbar {
+    width: 6px;
+}
+
+.sidebar::-webkit-scrollbar-thumb,
+.sidebar-menu::-webkit-scrollbar-thumb {
+    background: rgba(255,255,255,0.3);
+    border-radius: 10px;
+}
+
+.sidebar::-webkit-scrollbar-track,
+.sidebar-menu::-webkit-scrollbar-track {
+    background: transparent;
+}
+.thumb-wrap {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 110px;
+}
+.thumb-wrap img {
+    width: 110px;
+    height: 62px;
+    object-fit: cover;
+    display: block;
+    border-radius: 8px;
+    transition: opacity .2s;
+}
+.thumb-wrap:hover img { opacity: .75; }
+.thumb-play {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+}
+.thumb-play i {
+    font-size: 1.8rem;
+    color: #fff;
+    filter: drop-shadow(0 1px 3px rgba(0,0,0,.6));
+}
+.no-thumb {
+    font-size: .78rem;
+    color: #aaa;
+}
